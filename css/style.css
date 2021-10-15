@@ -1,0 +1,136 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* TEST */
+}
+img{
+    width: 100%;
+}
+
+
+/* GENERAL */
+body{
+    font-family: 'Open Sans',sans-serif;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.normal-text{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* Columns */
+.col{
+    float: left;
+}
+.half-width-col{
+    width: 50%;
+}
+.forty-width{
+    width: 40%;
+}
+.sixty-width{
+    width: 60%;
+    position: relative;
+}
+
+/* Effects */
+li.m-hover:hover{
+    border-bottom: 2px solid black;
+}
+a.small-btn:hover, a.big-btn:hover{
+    background-color: #3c84ff;
+}
+
+/* Buttons */
+.blue-btn{
+    display: inline-block;
+    background-color: #0061ff;
+    color: white;
+}
+.small-btn{
+    display: inline-block;
+    padding: 6px 18px;
+    text-decoration: none;
+    line-height: normal;
+}
+.big-btn{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 10px 22px;
+    text-decoration: none;
+}   
+
+
+
+/* HEADER */
+header{
+    height: 9vh;
+    line-height: 9vh;
+}
+header img{
+    height: 27px;
+    width: auto;
+    vertical-align: middle;
+    padding: 0 20px;
+}
+header ul{
+    display: inline-block;
+}
+header ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 20px;
+    vertical-align: middle;
+}
+header a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+.right-col{
+    text-align: right;
+}
+
+
+
+/* MAIN */
+.big-container{
+    width: 80%;
+    margin: auto;
+}
+.azure-bg{
+    background-color: #b4d0e7;
+}
+/* Jumbotron */
+.main-title{
+    font-size: 85px;
+    font-weight: 900;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+.jumbotron-text{
+    width: 70%;
+}
+.forty-width .blue-btn.big-btn{
+    margin: 35px 0 15px;
+}
+.arrow-down{
+    padding-top: 40px;
+    padding-bottom: 130px;
+    font-size: 40px;
+}
+.jumbo-image{
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
