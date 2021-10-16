@@ -18,10 +18,24 @@ body{
     display: table;
     clear: both;
 }
+
+/* Texts */
 .normal-text{
     font-size: 17px;
     font-weight: 400;
 }
+.small-text{
+    font-size: 14.5px;
+    font-weight: 400;
+}
+.big-secondary-title{
+    font-size: 25px;
+    font-weight: 900;
+}
+.normal-text.text-bold{
+    font-weight: 800;
+}
+
 
 /* Columns */
 .col{
@@ -36,6 +50,9 @@ body{
 .sixty-width{
     width: 60%;
     position: relative;
+}
+.one-third-width{
+    width: calc( 100% / 3);
 }
 
 /* Effects */
@@ -77,6 +94,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 5;
 }
 header img{
     height: 27px;
@@ -105,6 +123,8 @@ header a{
 
 
 
+
+
 /* MAIN */
 .big-container{
     width: 80%;
@@ -117,6 +137,9 @@ header a{
 .azure-bg{
     background-color: #b4d0e7;
 }
+
+
+
 /* Jumbotron */
 .main-title{
     font-size: 85px;
@@ -142,6 +165,7 @@ header a{
 }
 
 
+
 /* Packets */
 .second-section{
     margin-top: 10%;
@@ -165,6 +189,7 @@ header a{
     border-radius: 50%;
     vertical-align: top;
     margin-right: 5px;
+    cursor: pointer;
 }
 .blue-rb::before{
     border: 5px solid #0061ff;
@@ -175,4 +200,62 @@ header a{
     border: 2px solid lightgray;
 }
 
-/* Packets */
+/* Packet content */
+.middle-packet-column{
+    width: 30%;
+    margin: 0 5%;
+    border: 1px solid #dbdbdd;
+
+    height: 1000px;
+}
+.lateral-packet-column{
+    width: 30%;
+    border: 1px solid #dbdbdd;
+
+    height: 1000px;
+}
+.people-per-packet{
+    text-align: center;
+    font-size: 17px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom:  1px solid #dbdbdd;
+}
+.packet-content{
+    padding: 25px 25px;
+}
+.packet-content .big-secondary-title{
+    margin-bottom: 20px; /* Spaziatura titolo */
+}
+.packet-content i{
+    display: inline-block;
+    margin-right: 5px;
+}
+.time-plan{
+    font-size: 15px;
+    font-weight: 600;
+    color: #687785;
+    margin: 7px 0 50px;
+}
+.packet-content .small-text{
+    margin: 20px 0; /* Spaziatura testo */
+}
+
+.packet-content .big-btn{
+    margin: 35px 30px 25px; /* Spaziatura button */
+}
+.packet-content .small-text a{
+    color: #1d73ff;
+    font-weight: 600;
+} 
+.packet-content a::after{
+    content: "";
+    display: block;
+    height: 2px; 
+    background-color: #dbdbdd; /* Riga grigia */
+    width: 20%;
+    margin: 30px 0 50px;
+}  
+.blue-check{
+    color: #0061ff;
+}
