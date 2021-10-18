@@ -70,6 +70,9 @@ ul{
 .one-third-width{
     width: calc( 100% / 3);
 }
+.twenty-width{
+    width: 20%;
+}
 
 /* Effects */
 li.m-hover:hover{
@@ -233,12 +236,12 @@ header a{
     margin: 0 5%;
     border: 1px solid #dbdbdd;
 
-    height: 1000px;
+    min-height: 1000px;
 }
 .lateral-packet-column{
     border: 1px solid #dbdbdd;
 
-    height: 1000px;
+    min-height: 1000px;
 }
 .people-per-packet{
     text-align: center;
@@ -452,4 +455,44 @@ header a{
 .question-box .normal-text{
     font-weight: 800;
     font-size: 27;
+}
+
+
+
+
+/* FOOTER */
+footer{
+    background-color: black;
+}
+.footer-col-container{
+    padding-top: 80px;
+}
+footer h4{
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+footer a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.footer-white-line{
+    height: 2px;
+    width: 8%;
+    background-color: #a3a3a3;
+    margin: 50px 0;
+}
+.globe-icon{
+    color: white;
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+.language span,.arrowup{
+    color: #636363;
+    font-size: 14px;
+    font-weight: 600;
 }
