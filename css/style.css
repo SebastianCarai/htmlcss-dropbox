@@ -18,6 +18,9 @@ body{
     display: table;
     clear: both;
 }
+ul{
+    list-style-type: none;
+}
 
 /* Texts */
 .normal-text{
@@ -28,10 +31,14 @@ body{
     font-size: 14.5px;
     font-weight: 400;
 }
-.big-secondary-title{
-    font-size: 25px;
+.secondary-title{
+    font-size: 47px;
+}
+.medium-secondary-title{
+    font-size: 27px;
     font-weight: 900;
 }
+
 .normal-text.text-bold{
     font-weight: 800;
 }
@@ -41,15 +48,24 @@ body{
 .col{
     float: left;
 }
-.half-width-col{
+.full-width{
+    width: 100%;
+}
+.half-width{
     width: 50%;
 }
-.forty-width{
-    width: 40%;
+.seventy-width{
+    width: 70%;
 }
 .sixty-width{
     width: 60%;
     position: relative;
+}
+.forty-width{
+    width: 40%;
+}
+.thirty-width{
+    width: 30%;
 }
 .one-third-width{
     width: calc( 100% / 3);
@@ -59,7 +75,7 @@ body{
 li.m-hover:hover{
     border-bottom: 2px solid black;
 }
-a.small-btn:hover, a.big-btn:hover{
+a.blue-btn:hover{
     background-color: #3c84ff;
 }
 
@@ -68,6 +84,14 @@ a.small-btn:hover, a.big-btn:hover{
     display: inline-block;
     background-color: #0061ff;
     color: white;
+    line-height: normal;
+}
+.white-btn{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    line-height: normal;
 }
 .small-btn{
     display: inline-block;
@@ -81,6 +105,7 @@ a.small-btn:hover, a.big-btn:hover{
     font-weight: 400;
     padding: 10px 22px;
     text-decoration: none;
+    line-height: normal;
 }   
 
 
@@ -170,8 +195,11 @@ header a{
 .second-section{
     margin-top: 10%;
 }
-.secondary-title{
-    font-size: 45px;
+.lined-emoticon{
+    padding-left: 25px; /* Emoticon-text aligned */
+}
+.lined-emoticon i{
+    margin-left: -25px; /* Emoticon-text aligned */
 }
 
 /* RadioButtons */
@@ -202,14 +230,12 @@ header a{
 
 /* Packet content */
 .middle-packet-column{
-    width: 30%;
     margin: 0 5%;
     border: 1px solid #dbdbdd;
 
     height: 1000px;
 }
 .lateral-packet-column{
-    width: 30%;
     border: 1px solid #dbdbdd;
 
     height: 1000px;
@@ -222,22 +248,22 @@ header a{
     border-bottom:  1px solid #dbdbdd;
 }
 .packet-content{
-    padding: 25px 25px;
+    padding: 25px 25px; /* Padding of the entire content*/
 }
 .packet-content .big-secondary-title{
     margin-bottom: 20px; /* Spaziatura titolo */
 }
 .packet-content i{
-    display: inline-block;
+    display: inline-block; /* icon margin */
     margin-right: 5px;
 }
 .time-plan{
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 600;  
     color: #687785;
     margin: 7px 0 50px;
 }
-.packet-content .small-text{
+.packet-content li{
     margin: 20px 0; /* Spaziatura testo */
 }
 
@@ -245,10 +271,10 @@ header a{
     margin: 35px 30px 25px; /* Spaziatura button */
 }
 .packet-content .small-text a{
-    color: #1d73ff;
+    color: #1d73ff;  
     font-weight: 600;
 } 
-.packet-content a::after{
+.link-blue::after{
     content: "";
     display: block;
     height: 2px; 
@@ -257,5 +283,173 @@ header a{
     margin: 30px 0 50px;
 }  
 .blue-check{
-    color: #0061ff;
+    color: #0061ff; 
+}
+
+/* Enterprise */
+.enterprise-container{
+    margin: 50px 0 100px;
+    border: 1px solid #dbdbdd;
+}
+.enterprise-packet-content{
+    padding: 30px;
+}
+.enterprise-packet-content .big-btn.blue-btn{
+    padding-left: 60px ;
+    padding-right: 60px ; /* Padding of the button */
+}
+.enterprise-packet-content .normal-text.text-bold{
+    margin: 15px 0 25px; /* Distance between texts*/
+}
+
+
+
+/* Dropbox Partner */
+.partner-text-container{
+    padding: 70px 50px; /* Container padding */
+}
+.partner-text-container p{
+    width: 80%;
+    margin-top: 35px ; /* Paragraph features */
+    margin-bottom: 50px ;
+}
+
+
+
+/* Operations Dropbox Business */
+.operations-container{
+    margin-top: 100px;
+    margin-bottom: 180px;
+}
+
+.row{
+    margin: 80px 0;
+}
+.middle-operation-col{
+    margin: 0 5%;
+}
+.operations-container h3{
+    margin-top: 20px;
+}
+.operations-container p{
+    margin-top: 25px;
+}
+.underline{
+    text-decoration: underline;
+}
+
+
+
+/* Teams Dropbox Business */
+.discover-about-clients{
+    display: inline-block;
+    color: #0262ff;
+    margin: 30px 0 40px;
+}
+
+.logos-col{
+    width: 500px;
+    height: 500px;
+
+}
+.middle-teams-col{
+    width:calc( 100% - 1000px);
+    height: 400px;
+    padding: 50px;
+    background-color: #f5f5f5;
+
+}
+.box{
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+.team-logo{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.middle-teams-col .designit-logo{
+    width: 25%;
+}
+.grey-line{
+    height: 2px; 
+    background-color: #dbdbdd; /* Riga grigia */
+    width: 10%;
+    margin: 30px 0 50px;
+}
+.middle-teams-col p.normal-text{
+    margin-bottom: 50px;
+}
+
+/*  logos BG colors */
+.lightgreen-bg{
+    background-color: #d0e9cd;
+    padding: 10px;
+}
+.green-bg{
+    background-color: #a2d39b;
+    height: 230px;
+}
+.bordeaux-bg{
+    background-color: #61082b;
+}
+.strong-azure-bg{
+    background-color: #0093ce;
+}
+.reddish-bg{
+    background-color: #ff1c1c;
+}
+.red-bg{
+    background-color: #d5001f;
+}
+.light-azure-bg{
+    background-color: #b4d0e7;
+}
+.blue-bg{
+    background-color: #0d2481;
+}
+.yellow-bg{
+    background-color: #ffd830;
+}
+
+/* Azure banner */
+.azure-banner{
+    padding: 100px 0;
+}
+.azure-banner .secondary-title{
+    color: #61082b;
+    width: 80%;
+}
+.azure-banner .white-btn{
+    border: none;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+
+
+/* Frequents Questions */
+.frequent-questions-container{
+    padding: 130px 0;
+}
+.frequent-questions-container h3{
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+.question-box{
+    padding: 40px 10px 40px 0;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+.dropdown{
+    float: right;
+    padding-right: 30px;
+}
+.question-box .normal-text{
+    font-weight: 800;
+    font-size: 27;
 }
