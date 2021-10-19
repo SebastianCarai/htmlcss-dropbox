@@ -38,7 +38,6 @@ ul{
     font-size: 27px;
     font-weight: 900;
 }
-
 .normal-text.text-bold{
     font-weight: 800;
 }
@@ -127,7 +126,7 @@ header{
 header img{
     height: 27px;
     width: auto;
-    vertical-align: middle;
+    vertical-align: middle; /* Dropbox Logo */
     padding: 0 20px;
 }
 header ul{
@@ -136,13 +135,13 @@ header ul{
 header ul li{
     display: inline-block;
     list-style-type: none;
-    padding: 0 20px;
+    margin: 0 20px;
     vertical-align: middle;
 }
 header a{
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 18px;   /* Menu options */
     font-weight: 600;
 }
 .right-col{
@@ -171,15 +170,15 @@ header a{
 /* Jumbotron */
 .main-title{
     font-size: 85px;
-    font-weight: 900;
-    padding-top: 100px;
+    font-weight: 900;   
+    padding-top: 100px;  
     padding-bottom: 40px;
 }
 .jumbotron-text{
-    width: 70%;
+    width: 70%;  
 }
 .forty-width .blue-btn.big-btn{
-    margin: 35px 0 15px;
+    margin: 35px 0 15px;  
 }
 .arrow-down{
     padding-top: 40px;
@@ -234,12 +233,12 @@ header a{
 /* Packet content */
 .middle-packet-column{
     margin: 0 5%;
-    border: 1px solid #dbdbdd;
+    border: 1px solid #dbdbdd; /*border of the lateral boxes */
 
     min-height: 1000px;
 }
 .lateral-packet-column{
-    border: 1px solid #dbdbdd;
+    border: 1px solid #dbdbdd; /*border of the central box */
 
     min-height: 1000px;
 }
@@ -267,7 +266,7 @@ header a{
     margin: 7px 0 50px;
 }
 .packet-content li{
-    margin: 20px 0; /* Spaziatura testo */
+    margin: 20px 0; /* Spaziatura testo nei pacchetti */
 }
 
 .packet-content .big-btn{
@@ -275,13 +274,13 @@ header a{
 }
 .packet-content .small-text a{
     color: #1d73ff;  
-    font-weight: 600;
+    font-weight: 600;  /* Link text */
 } 
 .link-blue::after{
     content: "";
     display: block;
     height: 2px; 
-    background-color: #dbdbdd; /* Riga grigia */
+    background-color: #dbdbdd; /* Grey line */
     width: 20%;
     margin: 30px 0 50px;
 }  
@@ -324,14 +323,13 @@ header a{
     margin-top: 100px;
     margin-bottom: 180px;
 }
-
 .row{
     margin: 80px 0;
 }
 .middle-operation-col{
     margin: 0 5%;
 }
-.operations-container h3{
+.operations-container h3{    /* Spaziatura negli item */
     margin-top: 20px;
 }
 .operations-container p{
@@ -346,31 +344,32 @@ header a{
 /* Teams Dropbox Business */
 .discover-about-clients{
     display: inline-block;
-    color: #0262ff;
+    color: #0262ff;       /* Blue text */
     margin: 30px 0 40px;
 }
 
 .logos-col{
     width: 500px;
     height: 500px;
-
 }
 .middle-teams-col{
     width:calc( 100% - 1000px);
     height: 400px;
     padding: 50px;
     background-color: #f5f5f5;
-
 }
 .box{
     width: 250px;
-    height: 250px;
+    height: 250px;   /* Box Dimensions */
     position: relative;
+}
+.logos-col img{
+    filter: invert(1); /* White logos */
 }
 .team-logo{
     width: 70%;
     position: absolute;
-    top: 50%;
+    top: 50%;            /* Center logo in the box */
     left: 50%;
     transform: translate(-50% , -50%);
 }
@@ -423,12 +422,12 @@ header a{
     padding: 100px 0;
 }
 .azure-banner .secondary-title{
-    color: #61082b;
+    color: #61082b;    /* Title features */
     width: 80%;
 }
 .azure-banner .white-btn{
     border: none;
-    padding-left: 80px;
+    padding-left: 80px;  /* White button */
     padding-right: 80px;
 }
 
@@ -440,12 +439,12 @@ header a{
 }
 .frequent-questions-container h3{
     font-size: 35px;
-    font-weight: 800;
+    font-weight: 800;  /* Section title */
     margin-bottom: 50px;
 }
 .question-box{
     padding: 40px 10px 40px 0;
-    border-top: 1px solid lightgray;
+    border-top: 1px solid lightgray;  
     border-bottom: 1px solid lightgray;
 }
 .dropdown{
@@ -454,7 +453,7 @@ header a{
 }
 .question-box .normal-text{
     font-weight: 800;
-    font-size: 27;
+    font-size: 27;  /* Questions */
 }
 
 
@@ -470,29 +469,29 @@ footer{
 footer h4{
     color: white;
     font-size: 27px;
-    font-weight: 600;
+    font-weight: 600;  /* Colums title */
     margin-bottom: 20px;
 }
 footer a{
     display: inline-block;
     color: white;
-    text-decoration: none;
+    text-decoration: none; /* Links */
     font-weight: 600;
     margin-top: 10px;
 }
 .footer-white-line{
     height: 2px;
     width: 8%;
-    background-color: #a3a3a3;
+    background-color: #a3a3a3;  /* White line */
     margin: 50px 0;
 }
 .globe-icon{
     color: white;
-    padding-bottom: 40px;
+    padding-bottom: 40px;  
     font-size: 20px;
 }
 .language span,.arrowup{
     color: #636363;
-    font-size: 14px;
+    font-size: 14px;  /* Lenguage text */
     font-weight: 600;
 }
